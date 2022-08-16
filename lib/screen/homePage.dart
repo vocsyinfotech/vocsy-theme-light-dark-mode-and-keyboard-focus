@@ -14,6 +14,13 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   var groupValue = 1;
   bool check = true;
+
+  @override
+  void dispose() {
+    FocusNode().dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

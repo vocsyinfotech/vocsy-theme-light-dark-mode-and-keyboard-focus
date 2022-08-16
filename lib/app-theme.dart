@@ -27,7 +27,6 @@ class AppTheme {
 
       /// ColorScheme [Key : ColorScheme.secondary]
       secondary: Colors.blue,
-
       onSecondary: Colors.green,
 
       /// ColorScheme [Key : ColorScheme.onPrimary]

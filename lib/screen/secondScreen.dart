@@ -10,7 +10,6 @@ class SecondScreen extends StatefulWidget {
 
 class _SecondScreenState extends State<SecondScreen> {
   TabController? tabController;
-  int currentIndex = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -95,12 +94,6 @@ In Flutter, we can give the Theme across the app by providing the ThemeData to t
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
-          currentIndex: currentIndex,
-          onTap: (index) {
-            setState(() {
-              currentIndex = index;
-            });
-          },
           items: [
             BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
             BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
