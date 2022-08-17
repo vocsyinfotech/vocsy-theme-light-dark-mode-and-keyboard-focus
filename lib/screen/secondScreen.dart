@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:theme/screen/thirdScreen.dart';
 
 class SecondScreen extends StatefulWidget {
   const SecondScreen({Key? key}) : super(key: key);
@@ -41,16 +40,6 @@ class _SecondScreenState extends State<SecondScreen> {
                   Center(child: Text('Calls Tab')),
                 ]),
               ),
-              ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => ThirdScreen(),
-                      ),
-                    );
-                  },
-                  child: Text('Third Screen')),
               Padding(
                 padding: EdgeInsets.all(10),
                 child: Text(
@@ -97,10 +86,8 @@ In Flutter, we can give the Theme across the app by providing the ThemeData to t
           items: [
             BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
             BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.shopping_cart_rounded), label: 'Shopping'),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.account_circle_outlined), label: 'Profile'),
+            BottomNavigationBarItem(icon: Icon(Icons.shopping_cart_rounded), label: 'Shopping'),
+            BottomNavigationBarItem(icon: Icon(Icons.account_circle_outlined), label: 'Profile'),
           ],
         ),
       ),
